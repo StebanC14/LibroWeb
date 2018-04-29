@@ -1,4 +1,116 @@
 <!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<!--En esta line se llama el contenido de archivo Stilos.CSS-->
+	<link rel="stylesheet" href="Stilos.css">
+	<!--En esta line se llama el contenido de archivo Funciones.js-->
+	<script type="text/javascript" src="Funciones.js"></script>
+	<!--En esta line se se crea directamente un script JS y se nombra la funcion como pulsar() -->
+	<script languaje="JavaScript">
+		function pulsar()
+		{
+			alert("Usuario y contrseña incorrecta Veriique los datos o seleciones Recuperar contraseña");
+		}
+	</script>
+</head>
+	<!--En el cuerpo del documento se crea una tabla centrada para mejorar la ubicacion de los archivos -->
+	<body>
+		<br><br><br>
+		<center>
+			<!--Esta table contine 9 filas y 5 columnas-->
+			<table width="812">
+				<!--Fila 1-->
+				<!--En esta fila se localiza el logotipo del sena y la imagen de login-->
+				<tr>
+					<td colspan="2">
+						<center>
+							<img src="Imagenes/LogoSena.png" width="78" height="74" atl="10">
+						</center>
+					</td>
+					<td width="399"></td>
+
+					<td colspan="2">
+						<center>
+							<img src="Imagenes/images.png" width="78" height="74" atl=""/>
+						</center>
+					</td>
+				</tr>
+				<!--Fila 2-->
+				<!--en esta fila se localizasolo se localiza el texto Aprendis, Ingrese Al Formulario-->
+				<tr><td colspan="2">Aprendis, Ingrese Al Formulario</td>
+					<td width="399"></td>
+					<td colspan="2"></td>
+				</tr>
+				<!--Fila 3-->
+				<!--en esta fila se localiza en el primer cuadro la imagen motocicleta, en el segundo cudro el boton de motocicleta, en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicado checkbox del Administrador y el texto-->
+				<tr>
+					<td width="97"><img src="Imagenes/Motocicleta.png" width="53" height="53"/></td>
+					<td width="97"><input type="button" name="Motocicleta" onclick = "location=''" value="Motocicleta"></td>
+					<td width="399"></td>
+					<td width="97" colspan="2"><input type="checkbox" name="Administrado" >Administrado</td>
+				</tr>
+				<!--Fila 4-->
+				<!--en esta fila se localiza en el primer cuadro la imagen bicicleta, en el segundo cudro el boton de bicicleta, en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicado checkbox del Operador y el texto-->
+				<tr>
+					<td width="97"><img src="Imagenes/bicycleta.png" width="53"/></td>
+					<td width="97"><button type="button" onclick ="location=''" name="Bicicleta">Bicicleta</button><br><br></td>
+					<td width="399"></td>
+					<td width="97" colspan="2"><input type="checkbox" >Operador</td>
+				</tr>
+				<!--Fila 5-->
+				<!--en esta fila se localiza en el primer y segundo cuadro que van combinados el texto Aprendis consulte su estado, en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicado el texto de usuario-->
+				<tr>
+					<td colspan="2">Aprendis, Consulte Su Estado<br><br></td>
+					<td width="399"></td>
+					<td width="97" colspan="2">Usuario:</td>
+				</tr>
+				<!--Fila 6-->
+				<!--en esta fila se localiza en el primer y segundo cuadro que van combinados el select con las ociones correspondientes al tipo de documento (TI, CC, CE), en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicada la caja de texto pra el usuariousuario-->
+				<tr>
+					<td colspan="2">
+						<select name="Tipo de documento">
+							<option selected="selected" >Tipo De Documento</option>
+							<option value="T.I">T.I</option>
+							<option value="C.C">C.C</option>
+							<option value="C.E">C.E</option>
+						</select>
+					</td>
+					<td width="399"></td>
+				  <td width="97" colspan="2"><input type="text"></td>
+				</tr>
+				<!--Fila 7-->
+				<!--en esta fila se localiza en el primer y segundo cuadro que van combinados el texto Documento, en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicado el texto contraseña-->
+				<tr>
+					<td colspan="2">Documento</td>
+					<td width="399"></td>
+					<td width="97" colspan="2">Contraseña:</td>
+				</tr>
+				<!--Fila 8-->
+				<!--en esta fila se localiza en el primer y segundo cuadro que van combinados la caja de texto para el documento, en tercer cuadro va bacio, y el 5 y 6 cuadro van combinados donde va ubicada la caja de texto para la contraseña-->
+				<tr>
+					<td colspan="2">
+						<input type="text" placeholder="Documento">
+					</td>
+					<td width="399"></td>
+					<td width="97" colspan="2"><input type="text"></td>
+					
+				</tr>
+				<!--Fila 9-->
+				<!--en esta fila se localiza en el primer y segundo cuadro que van combinados el boton colsultar, en tercer cuadro va bacio, quinto cuadro esta el boton ingresar y sexto cuadro va ubicado el texto recuperar contraseña para redirecionar a formulario de recuperacion de contraseña -->
+				<tr>
+				  <td colspan="2"><input type="button" onclick = "location=''" value="Consultar"></td>
+					<td width="399"></td>
+					<!--En esta linea esta el boton ingresar en el cual se llama la funcion pulsar() echa con leguaje JS en el head del documento -->
+					<td width="97"><button type="submit" onclick ="pulsar()" >ingresar</button></td>
+					<td width="98"><a href="">Recuperar Contraseña</a> </td>
+				</tr>
+			</table>
+	</center>
+	
+</body>
+<!--
+<!doctype html>
 <html>
 <head>
 	<style>
@@ -55,4 +167,5 @@ body {
 </form>	
 		 </div>
 </body>	
+</html> -->	
 </html> 

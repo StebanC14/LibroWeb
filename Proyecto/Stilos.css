@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+/*En esta line se encuntra el logotipo de PDCOL el cual se establece como fondo fijo*/
+body {
+   /* background:  url(Imagenes/LogoPdcolMod.png)no-repeat center top;*/
+	background:  url(Imagenes/LogoPdcol5.png)no-repeat center top;
+}
